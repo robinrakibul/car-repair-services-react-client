@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Work from '../Work/Work';
+import './Services.css';
 
 const Services = () => {
     const [services,setServices] = useState([]);
@@ -12,10 +13,12 @@ const Services = () => {
 
     return (
         <div>
-            <h2>Services: {services.length}</h2>
+            <h1 className='services-title'>Our Services</h1>
+            <div className="services-container">
             {
                 services.map(service => <Work key={service.id} service={service}></Work>)
             }
+            </div>
         </div>
     );
 };

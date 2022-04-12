@@ -1,11 +1,13 @@
 import React from 'react';
-
+import './Work.css';
 const Work = ({service}) => {
     const {name, img, description, price} = service;
     return (
-        <div>
+        <div className='work'>
             <img src={img} alt="" />
-            <h2>This is a single service: {name}</h2>
+            <p>Price: {price}</p>
+            <p><small>{description}</small></p>
+            <button>Book: {name}</button>
         </div>
     );
 };
