@@ -1,13 +1,13 @@
 import React from 'react';
-
+import './Footer.css';
 // Get Current Year
 const getYear = () => {
     return new Date().getFullYear();
 }
 const Footer = () => {
     return (
-       <footer>
-           <p><small>Copyright &copy;{getYear()}</small></p>
+       <footer className='text-center mt-5 bg-dark text-white'>
+           <p><small>Copyright &copy; Rakibul Hassan Robin | {getYear()}</small></p>
        </footer>
     );
 };

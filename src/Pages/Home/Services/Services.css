@@ -4,11 +4,6 @@
     grid-gap: 20px;
 }
 
-.services-title{
-    text-align: center;
-    color: rgb(68, 106, 203);
-}
-
 /* Responsiveness */
 @media only screen and (max-width:576px){
     .services-container{

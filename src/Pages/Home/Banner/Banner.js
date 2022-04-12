@@ -21,7 +21,7 @@ const Banner = () => {
                 />
                 <Carousel.Caption>
                     <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, officia.</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -45,9 +45,7 @@ const Banner = () => {
 
                 <Carousel.Caption>
                     <h3>Third slide label</h3>
-                    <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                    </p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, sunt!</p>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
