@@ -1,13 +1,21 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Work.css';
 const Work = ({service}) => {
-    const {name, img, description, price} = service;
+    // destructuring
+    const {id, name, img, description, price} = service;
+    const navigate = useNavigate();
+    const navigateToServiceDetail = id =>{
+        navigate(`/service/${id}`)
+    }
+
     return (
         <div className='work'>
             <img className='w-100' src={img} alt="" />
             <p>Price: {price}</p>
             <p><small>{description}</small></p>
-            <button className='btn btn-primary'>Book: {name}</button>
+            {/* wrapping with arrow function */}
+            <button onClick={()=> navigateToServiceDetail(id)} className='btn btn-primary'>Book: {name}</button>
         </div>
     );
 };
