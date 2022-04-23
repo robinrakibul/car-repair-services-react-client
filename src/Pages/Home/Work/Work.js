@@ -3,10 +3,10 @@ import { useNavigate } from 'react-router-dom';
 import './Work.css';
 const Work = ({service}) => {
     // destructuring
-    const {id, name, img, description, price} = service;
+    const {_id, name, img, description, price} = service;
     const navigate = useNavigate();
     const navigateToServiceDetail = id =>{
-        navigate(`/service/${id}`)
+        navigate(`/service/${_id}`)
     }
 
     return (
@@ -15,7 +15,7 @@ const Work = ({service}) => {
             <p>Price: {price}</p>
             <p><small>{description}</small></p>
             {/* wrapping with arrow function */}
-            <button onClick={()=> navigateToServiceDetail(id)} className='btn btn-primary'>Book: {name}</button>
+            <button onClick={()=> navigateToServiceDetail(_id)} className='btn btn-primary'>Book: {name}</button>
         </div>
     );
 };
