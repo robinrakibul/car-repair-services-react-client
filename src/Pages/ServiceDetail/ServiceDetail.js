@@ -11,7 +11,7 @@ const ServiceDetail = () => {
         .then(data=>setService(data));
     },[])
     return (
-        <div>
+        <div className='container mt-2'>
             <h2>You are about to book: {service.name}</h2>
             <div className='text-center'>
             <Link to="/checkout">
