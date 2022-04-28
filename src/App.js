@@ -40,7 +40,7 @@ function App() {
             <ManageServices></ManageServices>
           </RequireAuth>
         }></Route>
-        <Route path="/order" element={
+        <Route path="/orders" element={
           <RequireAuth>
             <Order></Order>
           </RequireAuth>
