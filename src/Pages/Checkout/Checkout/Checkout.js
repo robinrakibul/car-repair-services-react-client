@@ -22,6 +22,7 @@ const Checkout = () => {
         }
         axios.post('http://localhost:5000/order', order)
             .then(response => {
+                console.log(response);
                 const { data } = response;
                 if (data.insertedId) {
                     toast('Your order is booked!!!');
@@ -38,7 +39,7 @@ const Checkout = () => {
                 <br />
                 <input className='w-100 mb-2' type="email" value={user?.email} name="email" placeholder='Your Email' required readOnly disabled />
                 <br />
-                <input className='w-100 mb-2' type="text" value={service.name} name="service" placeholder='Service' required readOnly />
+                <input className='w-100 mb-2' type="text" value={service.name} name="service" placeholder='Service' required readOnly disabled />
                 <br />
                 <input className='w-100 mb-2' type="text" name="address" placeholder='Home Address' autoComplete='off' required />
                 <br />
