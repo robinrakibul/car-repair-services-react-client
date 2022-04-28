@@ -39,7 +39,7 @@ const Checkout = () => {
                 <br />
                 <input className='w-100 mb-2' type="email" value={user?.email} name="email" placeholder='Your Email' required readOnly disabled />
                 <br />
-                <input className='w-100 mb-2' type="text" value={service.name} name="service" placeholder='Service' required readOnly disabled />
+                <input className='w-100 mb-2' type="text" value={service.name} name="service" placeholder='Service' required readOnly />
                 <br />
                 <input className='w-100 mb-2' type="text" name="address" placeholder='Home Address' autoComplete='off' required />
                 <br />
