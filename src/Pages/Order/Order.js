@@ -17,8 +17,15 @@ const Order = () => {
         getOrders();
     },[user])
     return (
-        <div className='container mt-3'>
+        <div className='w-50 mx-auto'>
             <h3>Your Orders {orders.length}</h3>
+            {
+                orders.map(order=><div key={order._id}>
+                    <p>Service Name:{order.service}</p>
+                    <p>Service Cost:{order.service}</p>
+                </div>
+                )
+            }
         </div>
     );
 };
