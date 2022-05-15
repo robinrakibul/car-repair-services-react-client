@@ -5,7 +5,7 @@ const About = () => {
     return (
         <div>
             <Helmet>
-                <title>About- Genius Car Services</title>
+                <title>About- Car Repair Services</title>
             </Helmet>
             <h2>This is about us</h2>
         </div>
